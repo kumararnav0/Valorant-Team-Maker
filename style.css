@@ -122,7 +122,7 @@ body {
 
 .search-container {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   margin: 20px;
   align-content: center;
 }
@@ -138,7 +138,7 @@ body {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  align-content: center;
+  align-content:center;
 }
 
 .search-container input[type="text"] {
@@ -213,3 +213,74 @@ body {
 
 
 /* Add spacing between buttons */
+
+
+
+
+
+.game-controls {
+  display: flex;
+  justify-content: space-around; /* This will space your items evenly */
+  align-items: center;
+  padding: 10px;
+  background: #9297e3; /* Dark background for a gaming look */
+  border-radius: 8px;
+}
+
+.game-controls > div {
+  flex: 1; /* Each child will take up equal space */
+  margin: 0 10px; /* This controls the space between your controls */
+}
+
+.dropdown label, .input-field label {
+  color:black; /* White text for labels */
+  font-weight: bold;
+  outline: #ec0606;
+  
+  
+}
+
+.dropdown select, .input-field input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: beige;
+  border-radius: 4px;
+  background: #7f85a2; /* Slightly lighter background for the inputs */
+  color: #fff; /* White text for inputs */
+}
+
+.dropdown select:hover, .input-field input:hover {
+  background: #677982; /* Hover effect for inputs */
+  
+}
+
+.dropdown select:focus, .input-field input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #e21414; /* Blue glow effect for focus */
+}
+
+/* CSS */
+#searchButton {
+  padding: 10px 15px;
+  background-color: #ff1313; /* Stylish blue background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(51, 4, 153, 0.2); /* Adds a subtle shadow for depth */
+  transition: all 0.3s;
+  margin-left: 50%;
+  margin-top: 2%;
+}
+
+#searchButton:hover {
+  background-color: #005f73; /* Darker shade on hover */
+  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2); /* Larger shadow on hover for a 'lifting' effect */
+}
+
+#searchButton:active {
+  background-color: #005f73; /* Even darker shade to simulate a click */
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); /* Smaller shadow to simulate being pressed */
+}
