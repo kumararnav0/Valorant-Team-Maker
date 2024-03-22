@@ -16,15 +16,43 @@ body {
 
 .logo img {
   height: 30px; /* Decreased logo size */}
+  
 
 
-  h1 {
-    font-family: 'Bangers';
-    font-size: 30px;
-    color: #ec0606;
-    margin: 0;
+
+  .text-box {
+    max-width: 920px;
+    margin-left: 140px;
+    max-height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background-image: linear-gradient(to right, rgba(255, 70, 85, 0.48), rgba(255, 163, 77, 0.48));
     text-align: center;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    border-left: 5px solid rgba(255, 70, 85, 0.48);
+    text-shadow: 0 0 5px rgba(255, 70, 85, 0.48), 0 0 10px rgba(255, 70, 85, 0.48);
   }
+  
+  .text-box:hover {
+    border-left-color: rgba(255, 163, 77, 0.48);
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+
+.text-box:hover {
+  border-left-color: rgba(255, 163, 77, 0.8);
+  transition: border-color 0.3s ease-in-out;
+}
+
+  .text-box:hover {
+    border-left-color: #ffa34d;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
   
   /* ... rest of your CSS ... */
   
@@ -44,6 +72,7 @@ body {
     left: 155%;
     transform: translateX(-40%);
     color: rgb(231, 11, 11);
+    
   }
   
   .text-block h2 {
@@ -53,12 +82,40 @@ body {
     text-align: left;
   }
   
+
+
+
   .text-block p {
     font-size: 1.5em;
     margin: 0;
     text-align: left;
   }
   
+
+  h2 {
+    font-family: 'Bangers';
+    font-size: 30px;
+    color: #ec0606;
+    margin-right: 0;
+    text-align: left;
+  }
+  #lwtsplay
+  p1{
+    font-family: 'Bangers';
+    font-size: 30px;
+    color: #ec0606;
+    margin-right: 50px;
+    text-align: left;
+  }
+  
+
+
+
+
+
+
+
+
 
  a{
   color: rgb(255, 255, 255);
@@ -113,11 +170,31 @@ body {
 
 
 
+
+
+
 .login-signup {
   float: right;
+  display: flex;
+  padding: 3px;
+  height: 30px;
  
+  font-size: medium;
+  color: gold;
+  
 
-
+}
+.login-signup button{
+  
+  background-color: #9297e3;
+  height: 30px;
+  color: bisque;
+  cursor: pointer;
+}
+.login-signup button :hover{
+  color: #e21414;
+  height: 30px;
+  cursor: pointer;
 }
 
 .search-container {
@@ -231,6 +308,42 @@ body {
   flex: 1; /* Each child will take up equal space */
   margin: 0 10px; /* This controls the space between your controls */
 }
+
+
+
+
+
+
+.player-details {
+  display: flex;
+  justify-content: space-around; /* This will space your items evenly */
+  align-items: center;
+  padding: 10px;
+  background: #9297e3; /* Dark background for a gaming look */
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around; /* This will space your items evenly */
+  align-items: center;
+  padding: 10px;
+  background: #9297e3; /* Dark background for a gaming look */
+  border-radius: 8px;
+}
+
+.player-details > div {
+  flex: 1; /* Each child will take up equal space */
+  margin: 0 10px; /* This controls the space between your controls */
+  flex: 1; /* Each child will take up equal space */
+  margin: 0 10px; /* This controls the space between your controls */
+
+}
+
+
+
+
+
+
+
+
 
 .dropdown label, .input-field label {
   color:black; /* White text for labels */
