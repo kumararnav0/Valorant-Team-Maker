@@ -359,18 +359,19 @@ body {
   margin-top: 5px;
   border: beige;
   border-radius: 4px;
-  background: #7f85a2; /* Slightly lighter background for the inputs */
+  background: #4e559f;
+ /* Slightly lighter background for the inputs */
   color: #fff; /* White text for inputs */
 }
 
 .dropdown select:hover, .input-field input:hover {
-  background: #677982; /* Hover effect for inputs */
+  background: #3e8e41; /* Hover effect for inputs */
   
 }
 
 .dropdown select:focus, .input-field input:focus {
   outline: none;
-  box-shadow: 0 0 0 2px #e21414; /* Blue glow effect for focus */
+   /* Blue glow effect for focus */
 }
 
 /* CSS */
@@ -396,4 +397,49 @@ body {
 #searchButton:active {
   background-color: #005f73; /* Even darker shade to simulate a click */
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); /* Smaller shadow to simulate being pressed */
+}
+
+
+.selections {
+  display: flex;
+  flex-direction: column;
+  width: 300px; /* Adjust width as needed */
+  margin: 0 auto;
+}
+
+.selections select {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+.dropdown-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Adjust the width as needed */
+
+  color:#1a1b1a;
+  background-color: #9297e3;
+}
+.dropdown-row select:hover{
+  background-color: #3ed943;
+  
+  
+}
+.dropdown-row::selection{
+  color: #e21414;
+  background-color: #3ed943;
+}
+
+.dropdown-row select {
+  flex: 1; /* Each select will take up equal space */
+  margin: 0 10px; /* Spacing between the selects */
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #f7f1f1;
+  color: #ffffff;
+  background-color: #4e559f;
 }
