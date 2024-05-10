@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('bg1.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .login-form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .login-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .login-form h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .input-group input:focus,
+  .input-group input:not(:placeholder-shown) {
+    border-color: #fe9a20;
+  }
+  
+  .input-group label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    transition: all 0.3s ease;
+    color: #999;
+  }
+  
+  .input-group input:focus + label,
+  .input-group input:not(:placeholder-shown) + label {
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+    color: #fe9a20;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fe9a20;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #fe9a20;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .login-container h1{
+    color: #fe9a20;
+    font-style: inherit;
+    
+
+  }
+
+  /* ... existing styles ... */
+
+.input-group {
+    position: relative;
+    /* ... other styles ... */
+  }
+  
+  .input-group i {
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 10px; /* Adjust as needed */
+    /* ... other styles ... */
+  }
+  
+  /* ... other styles ... */
+
+.input-group {
+    position: relative;
+    /* ... other styles ... */
+  }
+  
+  .input-group i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .far fa-eye{
+    margin-top: 10px;
+  }
+  .login-container h1
+    {
+        font-family: 'Bungee', sans-serif;
+        font-size:larger;
+      }
+  

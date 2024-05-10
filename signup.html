@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="signup.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Signup Page</title>
+</head>
+<body>
+  <div class="container">
+    <div class="image-container">
+      <!-- Your main image will go here -->
+      
+    </div>
+    <div class="profile-pic-container">
+      <img id="profileImage" src="#" alt="Profile Picture Preview" />
+      <input type="file" id="profilePic" name="profilePic" accept="image/*" required>
+    </div>
+    <h2>Sign-Up:Team-Builder</h2>
+  <form id="signupForm" enctype="multipart/form-data">
+    <div class="input-row">
+      <input type="text" id="firstName" placeholder="First Name" required>
+      <input type="text" id="lastName" placeholder="Last Name" required>
+    </div>
+    <div class="input-row">
+      <input type="email" id="email" placeholder="Email Address" required>
+      <input type="tel" id="phoneNumber" placeholder="Phone Number" required>
+    </div>
+    
+    <div class="input-row">
+      <input type="date" id="dob" placeholder="Date of Birth" required>
+      <input type="text" id="age" placeholder="Age" readonly>
+    </div>
+    <div class="input-row">
+      <input type="text" id="riotId" placeholder="Riot ID" required>
+      <input type="text" id="tagline" placeholder="#Tagline" required>
+    </div>
+    <div class="input-row password-row">
+      <input type="password" id="password" placeholder="Password" required>
+      <span id="togglePassword" class="toggle-password">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+      </span>
+    </div>
+    <select id="server" required>
+      <option value="US West (San Jose, California, USA)">US West (San Jose, California, USA)</option>
+      <option value="US East (Ashburn, Virginia, USA)">US East (Ashburn, Virginia, USA)</option>
+      <option value="US Central (Dallas, Texas, USA)">US Central (Dallas, Texas, USA)</option>
+      <option value="US Central (Chicago, Illinois, USA)">US Central (Chicago, Illinois, USA)</option>
+      <option value="US Central (Atlanta, Georgia, USA)">US Central (Atlanta, Georgia, USA)</option>
+      <option value="Santiago, Chile">Santiago, Chile</option>
+      <option value="Mexico City, Mexico">Mexico City, Mexico</option>
+      <option value="Miami, USA">Miami, USA</option>
+      <option value="Sao Paulo, Brazil">Sao Paulo, Brazil</option>
+      <option value="Frankfurt, Germany">Frankfurt, Germany</option>
+      <option value="Paris, France">Paris, France</option>
+      <option value="Stockholm, Sweden">Stockholm, Sweden</option>
+      <option value="Istanbul, Turkey">Istanbul, Turkey</option>
+      <option value="London, United Kingdom">London, United Kingdom</option>
+      <option value="Warsaw, Poland">Warsaw, Poland</option>
+      <option value="Madrid, Spain">Madrid, Spain</option>
+      <option value="Bahrain">Bahrain</option>
+      <option value="Seoul, South Korea">Seoul, South Korea</option>
+      <option value="Hong Kong, China">Hong Kong, China</option>
+      <option value="Tokyo, Japan">Tokyo, Japan</option>
+      <option value="Singapore">Singapore</option>
+      <option value="Sydney, Australia">Sydney, Australia</option>
+      <option value="Mumbai, India">Mumbai, India</option>
+      
+      
+      <!-- Add other servers as needed -->
+    </select>
+    
+    <button type="submit">Sign Up</button>
+  </form>
+</div>
+<script src="signup.js"></script>
+</body>
+</html>

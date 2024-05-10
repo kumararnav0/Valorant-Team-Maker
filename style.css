@@ -22,31 +22,22 @@ body {
 
   .text-box {
     max-width: 920px;
-    margin-left: 140px;
-    max-height: 150px;
+    margin-right: 360px;
+    max-height: 130px;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     background-image: linear-gradient(to right, rgba(255, 70, 85, 0.48), rgba(255, 163, 77, 0.48));
     text-align: center;
     line-height: 1.6;
-    font-size: 18px;
+    font-size: 16px;
     color: #ffffff;
     font-family: 'Arial', sans-serif;
     border-left: 5px solid rgba(255, 70, 85, 0.48);
     text-shadow: 0 0 5px rgba(255, 70, 85, 0.48), 0 0 10px rgba(255, 70, 85, 0.48);
   }
   
-  .text-box:hover {
-    border-left-color: rgba(255, 163, 77, 0.48);
-    transition: border-color 0.3s ease-in-out;
-  }
   
-
-.text-box:hover {
-  border-left-color: rgba(255, 163, 77, 0.8);
-  transition: border-color 0.3s ease-in-out;
-}
 
   .text-box:hover {
     border-left-color: #ffa34d;
@@ -442,4 +433,10 @@ body {
   border: 1px solid #f7f1f1;
   color: #ffffff;
   background-color: #4e559f;
+}
+.completesearch{
+  background-color: #9297e3;
+  border-width: 1cm;
+
+  border-color: #e21414;
 }
